@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/applicationcss.css" >
+    <title>Application</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+	   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>
+	  <style>
+	#container {
+		position: relative;
+		height: 100%;
+	  }
+	p{
+		font: 14px "Vast Shadow";  
+		color: #451B1B;
+	}
+	h1{
+		font: 40px "Vast Shadow";
+		text-align: left;
+		width: 100%;
+		margin-top: 80px;
+	}
+	h2{
+		font: 16px "Vast Shadow"; 
+		text-align: left;
+		width: 100%;
+	}
+	h3{
+		font: 20px "Vast Shadow"; 
+		text-align: left;
+	}
+	div{
+		font: 14px "Vast Shadow";   
+	}
+	lebel{
+		font: 14px "Vast Shadow";   
+	}
+	img{
+		position: relative;
+	}
+	
+	a{
+		margin-left: 40px;
+		display: inline-block;
+		  position: relative;
+		  text-decoration: none;
+		  color: inherit; 
+	}
+	</style>
+	 
+  </head>
+<body style="background-color:#FCF9F7;">
+	
+	
+	<header class="header"><img src="photo/logo.png" alt="logo" style="width:50px;height:50px;">
+	  Spriengfield Exp.
+	<a class="link" href="index.html" style="font: 16px Vast Shadow;">Home </a>
+	  <a class="link" href="" style="font: 16px Vast Shadow;">Countries </a>
+	  <a class="link" href="" style="font: 16px Vast Shadow;">Guides </a>
+	  <a class="link" href="fares.html" style="font: 16px Vast Shadow;">Fares</a>
+	  <a class="link" href="" style="font: 16px Vast Shadow;">Reviews</a>
+	  <a class="link" href="application.html" style="font: 16px Vast Shadow;">Application</a>
+	</header>
+	<div class="container text-center">
+		<h1>Apply Now</h1>
+	  <h2>Fill in the application form to join one of our upcoming expeditions</h2>
+		<canvas class="rectangle2"></canvas>
+	  		<canvas class="rectangle1"></canvas>
+		<article class="main">
+		<form class="row g-3">
+			<div class="row ">
+				<label for="inputEmail4" style="margin-top: 32px;" class="form-label">Full Name</label>
+			  <div class="col">
+				<input name="name" type="text" class="form-control" style="background-color: #E2D0BF; border:2px solid #93766E;  border-radius: 0px;" placeholder="Enter your name" aria-label="Name">
+			  </div>
+			  <div class="col">
+				<input name="surname" type="text" class="form-control" style="background-color: #E2D0BF; border:2px solid #93766E;  border-radius: 0px;" placeholder="Enter your surname" aria-label="Surname">
+			  </div>
+				<div id="emailHelp" class="form-text">As it appears on your passport</div>
+			</div>
+			
+		  <div class="col-12" style="margin-top: 32px;">
+			<label for="inputEmail4" class="form-label">E-mail</label>
+			<input name="email" type="email" class="form-control" style="background-color: #E2D0BF; border:2px solid #93766E; border-radius: 0px;" placeholder="Enter your email adress" id="inputEmail4">
+		  
+		  <div class="col-12" style="margin-top: 32px;">
+			<label for="inputAddress" class="form-label">Phone Number</label>
+			<input name="phone" type="tel" class="form-control"  style="background-color: #E2D0BF; border:2px solid #93766E; border-radius: 0px;" id="inputAddress" placeholder="Enter your phone number">
+		  </div >
+		  <input name="theme" type="hidden" class="contact-form__input contact-form__input_theme"
+             value="заявка с сайта SpringfieldExp.com">
+			 <div class="preloader"></div>
+			 <p class="contact-form__message"></p>
+		  
+		  <div class="col-12">
+			<button type="submit" class="contact-form__button" style="background-color: #AE9D8A; border:2px solid #A79081; color: #FAF9F8; border-radius: 0px; margin-top: 32px;font-size: 24px; padding-right: 40px; padding-left: 40px;" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Send</button>
+		  </div>
+			 </div>
+		</form>
+		</article>
+		<canvas class="rectangle2"></canvas>
+	  		<canvas class="rectangle1"></canvas>
+		<footer class="footer">© 2023 Springfield Expeditions. All rights reserved.
+	<a class="link" href="">Contact us</a>
+	  <a class="link" href="">Feedback</a>
+	</footer>
+</div>
+	<div style="opacity: 0.8; position: absolute; top: 456px; right: 0px; display:none;" class="scroll-to-top-button"></div>
+
+
+<!-- pcvector.net -->
+	<script src="/templates/pcv/js/pcvector.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script src="/telegramform/js/telegramform.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+  <script>
+    $(function () {
+      $('input[type="tel"]').mask('+7(000)000-00-00');
+    });
+  </script>
+  </body>
+</html>

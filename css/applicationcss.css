@@ -1,0 +1,177 @@
+@charset "utf-8";
+/* CSS Document */
+@font-face{
+	font-family: "Vast Shadow";
+	src: url("font/VastShadowRegular.ttf")
+}
+#container {
+		position: relative;
+		height: 100%;
+	  }
+	p{
+		font: 14px "Vast Shadow";  
+		color: #451B1B;
+	}
+	h3{
+		font: 40px "Vast Shadow";
+		text-align: left;
+		width: 100%;
+		margin-top: 80px;
+	}
+	h2{
+		font: 16px "Vast Shadow"; 
+		text-align: left;
+		width: 100%;
+	}
+	h3{
+		font: 20px "Vast Shadow"; 
+		text-align: left;
+	}
+	div{
+		font: 14px "Vast Shadow";   
+	}
+	lebel{
+		font: 14px "Vast Shadow";   
+	}
+	img{
+		position: relative;
+	}
+	
+	a{
+		margin-left: 40px;
+		display: inline-block;
+		  position: relative;
+		  text-decoration: none;
+		  color: inherit; 
+	}
+	.rectangle1 {
+	  align-content: center;
+	  width: 100%;
+	  height: 3px;
+	  background: black;
+	  margin-bottom: 40px;
+	}
+	.rectangle2 {align-content: center;
+	  width: 100%;
+	  height: 2px;
+	  background: black;
+	  margin-top: 40px;
+	}
+	.flex-container {
+	  display: flex;
+	  flex-flow: row wrap;
+	  font-weight: bold;
+	  text-align: center;
+	}
+
+.header {background: #FFF8F1;
+	align-items: baseline;
+	padding-left: 50px;
+	text-align: center;
+	padding: 20px;
+	font: 32px "Vast Shadow";}
+.footer {background: #FCF9F7;
+	padding-bottom: 60px;
+	text-align: center;
+	font: 16px "Vast Shadow";}
+
+
+	.link:before{
+		content: "";
+		position: absolute;
+		bottom: -2px;
+		height: 1px;
+		width: 100%;
+		background: black;
+		border-radius: 50px;
+		transform: scaleX(0);
+		transition: transform 0.2s linear;
+	}
+	.link:hover:before{
+		transform: scaleX(1);
+	}
+	.main {
+	  background: #F3E5D0;
+		border-top: 10px double;
+		border-bottom: 10px double;
+	  justify-content: left;
+		text-align: left;
+		width: 100%;
+		padding: 32px 114px;
+	}
+		.scroll-to-top-button{
+			background: #FCF9F7;
+			background-image: url("photo/00.png");
+			background-size: cover;
+			width: 32px;
+			height: 32px;
+			color: #fff;
+			font-family: verdana;
+			border-radius: 5px;
+			cursor: pointer;
+			padding: 15px;
+			margin: 20px;
+		}
+
+		.scroll-to-top-button:active{
+			transform: scale(0.90);
+		}
+
+		.preloader {
+			position: relative;
+			margin: 0 0 0 45%;
+			height: 15px;
+			visibility: hidden;
+			opacity: 0;
+			display: none;
+			transition: 0.3s; }
+			.preloader_active {
+			  display: block;
+			  visibility: visible;
+			  opacity: 1;
+			  transition: 0.3s; }
+			.preloader:before {
+			  width: 12px;
+			  height: 12px;
+			  border-radius: 50%;
+			  content: "";
+			  position: absolute;
+			  background: #393e46;
+			  animation: preloader_before 1.8s infinite cubic-bezier(0.4, 0, 0.2, 1); }
+			.preloader:after {
+			  width: 12px;
+			  height: 12px;
+			  left: 15%;
+			  border-radius: 50%;
+			  content: "";
+			  position: absolute;
+			  background: #5f646c;
+			  animation: preloader_after 1.8s infinite cubic-bezier(0.4, 0, 0.2, 1); }
+		  
+		  @keyframes preloader_before {
+			0% {
+			  transform: translateX(0px) rotate(0deg); }
+			50% {
+			  transform: translateX(160px) scale(1.5) rotate(264deg);
+			  background: #00adb5;
+			  border-radius: 0; }
+			100% {
+			  transform: translateX(0px) rotate(0deg); } }
+		  @keyframes preloader_after {
+			0% {
+			  transform: translateX(0px) rotate(0deg); }
+			50% {
+			  transform: translateX(-160px) scale(1.5) rotate(-264deg);
+			  background: #00fff5;
+			  border-radius: 0; }
+			100% {
+			  transform: translateX(0px); } }
+		  @media (max-width: 768px) {
+			.form-wrapper {
+			  padding: 15px; } }
+		  @media (max-width: 480px) {
+			.contact-form {
+			  padding: 30px 15px; }
+			  .contact-form__title {
+				font-size: 16px; } }
+	
